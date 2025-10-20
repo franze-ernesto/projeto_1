@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Voluntários</title>
 </head>
 <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__link">Principal</a></li>
+          <li class="menu__item"><a href="cadastro.html" class="menu__link">Cadastro</a></li>
+          <li class="menu__item"><a href="projetos.html" class="menu__link">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <section class="cadastro">
+        <h1 class="cadastro__titulo">Cadastro de Voluntário</h1>
+        <form class="cadastro__formulario">
+          <fieldset class="cadastro__grupo">
+            <legend class="cadastro__legenda">Informações Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"              
+              placeholder="Ex: João da Silva"
+              required
+            />
+
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"              
+              placeholder="Ex: joaosilva@email.com"
+              required
+            />
+
+            <label for="cpf">CPF:</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"              
+              placeholder="Ex: 000.000.000-00"
+              required
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+            />
+
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"              
+              placeholder="Ex: (11) 91234-5678"
+              required
+              pattern="\(\d{2}\)\s\d{5}-\d{4}"
+            />
+
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" id="data" name="data" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required />
+
+            <label for="cep">CEP:</label>
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              required
+              placeholder="Ex: 00000-000"
+              required
+              pattern="\d{5}-\d{3}"
+            />
+
+            <label for="cidade">Cidade:</label>
+            <input
+              type="text"
+              id="cidade"
+              name="cidade"
+              required
+              placeholder="Ex: Xique Xique"
+              required
+            />
+
+            <label for="estado">Estado:</label>
+            <input
+              type="text"
+              id="estado"
+              name="estado"
+              required
+              placeholder="Ex: BA"
+              required
+              maxlength="2"
+            />
+          </fieldset>
+
+          <button type="submit" class="cadastro__botao">Enviar Cadastro</button>
+        </form>
+
+        <section class="cadastro__beneficios">
+          <h2 class="cadastro__beneficios-titulo">Por que ser voluntário?</h2>
+          <p class="cadastro__beneficios-texto">
+            Ao se tornar voluntário da ONG GreenWash, você ajuda a transformar
+            realidades, participa de capacitações e recebe certificados digitais
+            reconhecendo sua contribuição.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p class="rodape__texto">&copy; 2025 OngGreenWash. Todos os direitos reservados.</p>
+    </footer>    
     
 </body>
 </html>

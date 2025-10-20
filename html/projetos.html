@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos Ong GreenWash</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__link">Principal</a></li>
+          <li class="menu__item"><a href="cadastro.html" class="menu__link">Cadastro</a></li>
+          <li class="menu__item"><a href="projetos.html" class="menu__link">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <section class="projetos">
+        <h1 class="projetos__titulo">Projetos da ONG GreenWash</h1>
+        <p class="projetos__descricao">
+          Conheça as ações que estão ajudando a transformar o planeta!
+        </p>
+
+        <article class="projetos__artigo">
+          <h2 class="projetos__subtitulo">Projeto Reflorestamento</h2>
+          <img
+            class="projetos__imagem"
+            src="./assets/pessoas_pal_arv.jpg"
+            alt="Voluntários plantando árvores"
+          />
+          <p class="projetos__texto">
+            Realizamos o plantio de árvores nativas em áreas urbanas e rurais degradadas.
+          </p>
+        </article>
+
+        <article class="projetos__artigo">
+          <h2 class="projetos__subtitulo">Projeto Água Viva</h2>
+          <img
+            class="projetos__imagem"
+            src="./assets/pessoas_lim_rio.jpg"
+            alt="Voluntários limpando rios"
+          />
+          <p class="projetos__texto">
+            Iniciativa para recuperar nascentes e rios locais, promovendo o uso sustentável da água.
+          </p>
+        </article>
+
+        <a href="cadastro.html" class="projetos__botao">Seja um voluntário</a>
+
+        <section class="indicadores">
+          <h2 class="indicadores__titulo">Indicadores de Impacto</h2>
+          <ul class="indicadores__lista">
+            <li class="indicadores__item">+10.000 árvores plantadas</li>
+            <li class="indicadores__item">+500 voluntários cadastrados</li>
+            <li class="indicadores__item">+20 nascentes recuperadas</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="galeria">
+        <h2 class="galeria__titulo">Galeria de Fotos</h2>
+        <div class="galeria__grid">
+          <img src="./assets/maos_dadas.jpg" alt="Área reflorestada" class="galeria__imagem" />
+          <img src="./assets/best_friends.jpg" alt="Voluntários em ação" class="galeria__imagem" />
+          <img src="./assets/arv_baixo.jpg" alt="Limpeza de rios" class="galeria__imagem" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p class="rodape__texto">&copy; 2025 OngGreenWash. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
