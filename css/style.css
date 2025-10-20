@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* base para rem (1rem = 16px) */
+}
+
+
+body {    
+    background-color: #f9f9f9; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+:root {
+  /* Paleta de cores */
+  --cor-primaria: #006d77;
+  --cor-secundaria: #83c5be;
+  --cor-acento: #edf6f9;
+  --cor-fundo: #f9f9f9;
+  --cor-texto: #333;
+  --cor-sucesso: #2a9d8f;
+  --cor-erro: #e63946;
+  --cor-alerta: #f4a261;
+
+  /* Tipografia */
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-tamanho-xs: 12px;
+  --fonte-tamanho-sm: 14px;
+  --fonte-tamanho-md: 16px;
+  --fonte-tamanho-lg: 20px;
+  --fonte-tamanho-xl: 24px;
+
+  /* Espaçamento modular */
+  --space-xxs: 8px;
+  --space-xs: 16px;
+  --space-sm: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xl: 64px;
+}
+
+
